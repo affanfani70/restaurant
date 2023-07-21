@@ -1,0 +1,123 @@
+body{
+    background-color: rgb(220, 212, 208);
+}
+
+/* Navigation  */
+#navbar{
+    flex-direction: column;
+}
+#navbar li a{
+    font-size: 1rem;
+    padding:  10px 7px;
+    /* padding-bottom: 10px; */
+}
+
+
+
+/* Home section */
+#home{
+    height: 473px;
+    padding:4px 15px;
+}
+#home::before{
+    height: 600px;
+    opacity: 0.7;
+}
+#home p{
+    font-size: 1.3rem;
+}
+
+
+/* services section */
+#service{
+    flex-direction: column;
+   
+}
+#service .box{
+    
+    margin: 10px 20px;
+    padding: 5px 10px;
+    border-radius: 23px;
+}
+#service .box img{
+    height: 130px;
+}
+#service .box2 img{
+    height: 90px;
+}
+#service p{
+    font-size: 1rem;
+    text-align: justify;
+    
+}
+
+
+
+/* clint section */
+#clint-section{
+    height: 200px;
+}
+#clint-section::before{
+    height: 100%;
+}
+#clint{
+    flex-flow: wrap;
+}
+.clintItem {
+    padding: 12px;
+}
+#clint img{
+    height: 45px;
+}
+#clint h1{
+    padding-bottom: none;
+}
+
+
+
+/* contect us section */
+#contactForm {
+    display: flex;
+    padding: 0px ;
+    align-items: center;
+    justify-content: right;
+    /* margin-right: 60px; */
+}
+#contact h1{
+    margin-left: 0px;
+}
+#contact form{
+    width: 60%;
+    margin: auto;
+}
+#contactForm input{
+    width: 110%;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 1rem;
+    outline: none;
+}
+#contactForm textarea{
+    width: 110%;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 1rem;
+    outline: none;
+}
+
+
+
+/* footer */
+
+
+
+
+/* utlilitiy classes */
+.h-premary{
+   font-size: 2rem;
+}
+.h-secandry{
+    font-size: 1.3rem;
+    padding: 8px;
+    
+}

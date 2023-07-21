@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Corner te best meal in the city || bakedmeal.com</title>
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" media="screen and (max-width: 1170px)" href="phone.css">
+    <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
+</head>
+ 
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="logo.png" alt="bakedmeal.com">
+        </div>
+        <ul class="navigation">
+            <li class="item"><a href="#home">Home</a></li>
+            <li class="item"><a href="#servicesContainer">Services</a></li>
+            <li class="item"><a href="#clint-section">Clints</a></li>
+            <li class="item"><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+    <section id="home">
+        <h1 class="h-premary">BakedMeal:City Food Corner</h1>
+        <div>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam id possimus Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati, odio?</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam id possimus elig
+            </div>
+            <button id="btn" type="button" class="btn">Order Now</button>
+            
+    </section>
+    
+    <section id="servicesContainer">
+        <h1 class="h-premary center">We provide</h1>
+        <div id="service">
+            <div class="box">
+                <img src="food1.png" alt="">
+                <h2 class="h-secandry center">Our Deals</h2>
+                <p class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi quod officiis nobis. Quibusdam repellat reiciendis voluptatem sequi. Earum alias a pariatur explicabo commodi, odio rerum deleniti assumenda inventore amet quas!</p>
+            </div>
+        <div id="service">
+            <div class="box box2">
+                <img src="food2.png" alt="">
+                <h2 class="h-secandry center">Our speciality</h2>
+                <p class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi quod officiis nobis. Quibusdam repellat reiciendis voluptatem sequi. Earum alias a pariatur explicabo commodi, odio rerum deleniti assumenda inventore amet quas!</p>
+            </div>
+        <div id="service">
+            <div class="box">
+                <img src="food3.png" alt="">
+                <h2 class="h-secandry center">Delivery Services</h2>
+                <p class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi quod officiis nobis. Quibusdam repellat reiciendis voluptatem sequi. Earum alias a pariatur explicabo commodi, odio rerum deleniti assumenda inventore amet quas!</p>
+            </div>
+    </section>
+    <section id="clint-section">
+        <h1 class="h-premary center">Our Clints</h1>
+        <div id="clint">
+            <div class="clintItem">
+                <img src="2.png" alt="our clint">
+            </div>
+            <div class="clintItem">
+                <img src="1.png" alt="our clint">
+            </div>
+            <div class="clintItem">
+                <img src="3.png" alt="our clint">
+            </div>
+            <div class="clintItem">
+                <img src="4.png" alt="our clint">
+            </div>
+           
+        </div>
+    </section>
+    <section id="contact">
+        <h1 class="h-premary center">Contact Us</h1>
+        <div id="contactForm">
+            <form action="">
+                <div class="formGroup">
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" id="name" placeholder="Enter your name">
+                </div>
+                <div class="formGroup">
+                    <label for="email">Email:</label>
+                    <input type="email" name="name" id="email" placeholder="Enter your Email">
+                </div>
+                <div class="formGroup">
+                    <label for="phone">Phone no:</label>
+                    <input type="phone" name="name" id="phone" placeholder="Enter your phone no.">
+                </div>
+                <div class="formGroup">
+                    <label for="message">Message:</label>
+                    <textarea name="message" id="message" cols="15" rows="5"></textarea>
+                </div>
+                <di class="formGroup">
+                    <button id="btnSend" class="btn" type="button">Send</button>
+                </di>
+            </form>
+        </div>
+    </section>
+
+
+        <footer>
+            <div class="center">
+                copyright &copy; all right reserved by bakedmeal
+            </div>
+        </footer>
+
+</body>
+<script>
+    let btn = document.getElementById('btn')
+btn.addEventListener('click',(e)=>{
+    console.log('clicked')
+})
+</script>
+<script src="responsive.js"></script>
+</html>

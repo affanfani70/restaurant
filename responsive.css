@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    text-decoration: none;
+}
+ html{
+    scroll-behavior: smooth;
+}
+:root{
+    --navbar-height:60px;
+}
+#navbar{
+    position: sticky;
+    top: 0px;
+    display: flex;
+    /* along y axis */
+    align-items: center;
+    /* along x center
+    justify-content: center; 
+    */
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold; 
+    
+}
+#navbar::before{
+    content: "";
+    position: absolute;
+    background-color: rgb(8, 8, 8);
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.6;
+}
+#logo{
+    margin:0px 35px;
+}
+#logo img{
+    height: 10vh;
+    margin: 5px 15px;
+}
+.navigation{
+    display: flex;
+}
+.navigation li {
+    font-size: 1.2rem;
+}
+.navigation li a{
+    display: block;
+    color: white;
+    padding: 4px 20px;
+    border-radius:10px ;
+}
+.navigation li a:hover{
+   background-color: white;
+    color: rgb(33, 30, 30);
+    /* text-decoration: 2px solid black underline; */
+    
+}
+
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 4px 150px;
+    height: 330px;
+    justify-content: center;
+    align-items: center;
+    
+}
+#home::before{
+    content: "";
+    position: absolute;
+    background-image:url(bg2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    top: 0px;
+    left: 0px;
+    height: 395px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+#home h1{
+    color: rgb(255, 0, 0);
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+#home p{
+    color:rgb(0, 0, 0) ;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+/* service box */
+#service{
+    display: flex;
+    /* margin: 60px; */
+    
+    /* border: 2px solid rebeccapurple; */
+
+   
+}
+#service .box{
+    border: 2px solid rgb(197, 52, 52);
+    margin: 25px 15px;
+    padding: 10px 15px;
+    border-radius: 23px;
+    background-color: rgb(249, 235, 209);    
+}
+#service .box img{
+    height: 170px;
+    display: block;
+    margin: auto;
+}
+#service p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1rem;
+    /* text-align: justify; */
+    
+}
+#clint-section{
+    position: relative;
+    height: 300px;
+    margin-bottom: 20px;
+    
+}
+#clint-section::before{
+    content: "";
+    position: absolute;
+    background-image: url(bg5.jpg);
+    background-repeat:no-repeat; 
+    background-position: center; 
+    background-size:  cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.2;
+
+}
+#clint{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.clintItem{
+    padding: 30px;
+}
+#clint img{
+    height: 110px;
+}
+
+#contact{
+    position: relative;
+    /* height: 30px; */
+    /* margin-top:  20px;
+    margin-bottom:  20px; */
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    background-image: url(contactus.jpg);
+    background-repeat:no-repeat; 
+    background-position: center; 
+    background-size:  cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.6;
+}
+#contactForm {
+    /* width: 60%;
+    position: relative;
+    right: -470px; */
+    display: flex;
+    padding-left:450px ;
+    align-items: center;
+    justify-content: center;
+}
+#contact h1{
+    margin-left: 500px;
+
+    /* width: 30%; */
+    /* position: relative;
+    right: -690px;
+    top: 30px; */
+}
+#contactForm input{
+    width: 120%;
+    padding:5px;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    outline: none;
+}
+#contactForm textarea{
+    width: 120%;
+    padding: 5px;
+    border-radius: 9px;
+    font-size: 1.1rem;
+}
+#contactForm form{
+    width: 40%;
+    
+    /* padding: 50px; */
+}
+#contactForm label{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3rem;
+    font-weight: bold;
+    /* padding: 50px; */
+}
+
+footer{
+    background-color: black;
+    color: wheat;
+    padding: 5px 20px;
+}
+
+/* utlilitiy classes */
+.h-premary{
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.5rem;
+    padding: 10px;
+}
+.h-secandry{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    padding: 15px;
+    
+}
+.btn{
+    padding: 7px 20px;
+    margin: 13px;
+    /* margin-left: 430px; */
+    border-radius:8px;
+    border: 2px solid  wheat;
+    background-color: rgb(196, 42, 42);
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    color: wheat;
+    cursor: pointer;
+}
+.center{
+    text-align: center;
+}
